@@ -59,10 +59,14 @@ Cells carry state via CSS classes:
 
 ## Git workflow
 
+**After every meaningful piece of work, commit and push.** Do not batch up changes — commit as you go so that progress is never lost and every change is easy to revert independently.
+
 ```powershell
 git add -A
 git commit -m "..."                   # use descriptive, imperative commits
 git push
 ```
 
-The remote is `origin/master` → `thinkingpositively12/TicTacToe` on GitHub. Commits follow the format established in the initial commit (imperative summary line, bulleted details, `Co-Authored-By` trailer).
+Commit messages must be clean and descriptive: an imperative single-line summary, a blank line, then bulleted details of what changed and why. Include `Co-Authored-By: Claude <noreply@anthropic.com>` as the final line.
+
+The remote is `origin/master` → `thinkingpositively12/TicTacToe` on GitHub.
